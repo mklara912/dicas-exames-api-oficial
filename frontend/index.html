@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hospitais Próximos</title>
+  <link rel="stylesheet" href="hospitals.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Hospitais Próximos</h1>
+        <p class="subtitle">Resultados filtrados por cidade e proximidade</p>
+      </div>
+
+      <div class="controls">
+        <input id="cityInput" type="text" placeholder="Cidade (ex: Arapiraca)" value="arapiraca" />
+        <button id="btnBuscar">Buscar</button>
+
+        <a href="exams.html" class="btn-exams">Ver Exames</a>
+      </div>
+    </header>
+
+    <section class="status-bar" id="statusBar" aria-live="polite"></section>
+
+    <section id="results" class="results-grid">
+    </section>
+
+    <footer class="footer">
+      <small>API: Geoapify · Backend: NestJS</small>
+    </footer>
+  </main>
+
+  <script src="hospitals.js"></script>
+</body>
+</html>

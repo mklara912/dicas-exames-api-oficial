@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exames Disponíveis</title>
+  <link rel="stylesheet" href="exams.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Exames Disponíveis</h1>
+        <p class="subtitle">Lista de exames cadastrados na plataforma</p>
+      </div>
+
+      <div class="controls">
+        <button id="btnBuscarExames">Buscar Exames</button>
+
+        <a href="index.html" class="btn-exams">Voltar</a>
+      </div>
+    </header>
+
+    <section class="status-bar" id="statusBar"></section>
+
+    <section id="results" class="results-grid"></section>
+
+    <footer class="footer">
+      <small>API Local · Backend NestJS</small>
+    </footer>
+  </main>
+
+  <script src="exams.js"></script>
+</body>
+</html>
