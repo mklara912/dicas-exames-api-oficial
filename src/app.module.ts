@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ExamesModule } from './exames/exames.module';
+import { PropertiesModule } from './properties/properties.module';
 
 @Module({
-  imports: [ExamesModule],
-  controllers: [],       // ← mantém vazio se não tiver controller
-  providers: [],         // ← mantém vazio se não tiver providers
+  imports: [ExamesModule, PropertiesModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
